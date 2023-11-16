@@ -61,12 +61,12 @@ public class RandProductSearchFrame extends JFrame {
     }
 
     private void createpanelCenter() {
-        searchLabel = new JLabel("Search Product Name: ");
-        searchLabel.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 18));
-        searchTF = new JTextField("", 20);
-        searchTF.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 16));
-        PanelT.add(searchLabel);
-        PanelT.add(searchTF);
+        jTextArea = new JTextArea(30, 60);
+        jTextArea.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 16));
+        jTextArea.setEditable(false);
+        pane = new JScrollPane(jTextArea);
+        pane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        PanelS.add(pane);
     }
 
     private void createpanelSouth() {
