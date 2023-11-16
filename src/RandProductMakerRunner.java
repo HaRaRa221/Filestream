@@ -1,5 +1,5 @@
-public class Main {
+public class RandProductMakerRunner {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        RandProductMakerFrame frame = new RandProductMakerFrame();
     }
 }
